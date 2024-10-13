@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "wu_ui",
+    "type": "har",
+    "deviceTypes": [
+      "default"
+    ]
+  }
+}

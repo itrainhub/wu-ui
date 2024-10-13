@@ -1,0 +1,11 @@
+{
+  "app": {
+    "bundleName": "com.example.lantingyouxuan",
+    "patchVersionCode": 2000420,
+    "versionCode": 1000000
+  },
+  "module": {
+    "name": "entry",
+    "type": "hotreload"
+  }
+}

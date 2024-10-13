@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4702603 */
+  src: url('iconfont.woff2?t=1728273146378') format('woff2'),
+       url('iconfont.woff?t=1728273146378') format('woff'),
+       url('iconfont.ttf?t=1728273146378') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 页面布局 */
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icon_lists {
+  width: 100%;
+  overflow: hidden;
+  *zoom: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.icon_lists li {
+  width: 100px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  text-align: center;
+  list-style: none;
+  cursor: default;
+}
+
+.icon_lists .icon {
+  display: block;
+  line-height: 50px;
+  font-size: 32px;
+  margin: 6px auto;
+  color: #666;
+  -webkit-transition: font-size 0.25s linear, width 0.25s linear;
+  -moz-transition: font-size 0.25s linear, width 0.25s linear;
+  transition: font-size 0.25s linear, width 0.25s linear;
+}
+
+.icon_lists .icon:hover {
+  font-size: 40px;
+}
+
+.icon_lists li .name {
+  color: #666;
+  font-size: 12px;
+}
+
+/* toast */
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+         
+  100% {
+    opacity: 1;
+  }            
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+     
+  100% {
+    opacity: 0;
+  }
+} 
+
+.toast_box {
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 120px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  /* bottom: 50%;
+  left: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%); */
+  display: none;
+}
+     
+.toast_box p {
+  box-sizing: border-box;
+  padding: 10px 20px;
+  width: fit-content;
+  background: #07c160;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  opacity: 0.9;
+}

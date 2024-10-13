@@ -1,0 +1,16 @@
+{
+  "name": "@itrain/wu-ui",
+  "version": "1.0.0",
+  "description": "一套简单易用的基于 HarmonyOS NEXT API12 的开源 UI 组件库",
+  "keywords": [
+    "UI",
+    "组件库",
+    "UI库",
+    "HarmonyOS",
+    "OpenHarmony"
+  ],
+  "main": "Index.ets",
+  "author": "itrain",
+  "license": "MIT",
+  "dependencies": {}
+}

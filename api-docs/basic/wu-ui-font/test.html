@@ -1,0 +1,23 @@
+<html>
+<body>
+  <div style="height: 300px;">这是测试的哟aas</div>
+<iframe id="icon-iframe" src="./index.html" frameborder="no" scrolling="no" border="0" style="width: 100%;"></iframe>
+</body>
+<script type="text/javascript">
+  const iconFrame = document.getElementById('icon-iframe')
+  iconFrame.onload = function()  {
+    var dHeight = iconFrame.contentWindow.document.documentElement.scrollHeight
+    iconFrame.height = dHeight
+
+    console.log('body::', document.body)
+    document.body.onscroll = function() {
+      console.log('scroll:::', document.body.scrollTop)
+      iconFrame.contentWindow.document.querySelector('.toast_box').style.top = document.body.scrollTop + 100 + 'px'
+    }
+  }
+  window.onscroll = function() {
+    console.log('scroll:', document.body.scrollTop)
+    iconFrame.contentWindow.document.querySelector('.toast_box').style.top = document.body.scrollTop + 100 + 'px'
+  }
+</script>
+</html>
