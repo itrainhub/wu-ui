@@ -1,6 +1,8 @@
 import {
   WuBackTop,
-  WuButton, WuCountDown, WuCountDownController,
+  WuButton,
+  WuCheckbox,
+  WuCountDown, WuCountDownController,
   WuCountDownTime,
   WuDivider,
   WuField,
@@ -36,6 +38,8 @@ struct Index {
   controller: WuCountDownController = new WuCountDownController()
 
   @State scrollY: number = 0
+
+  @State checked: boolean = true
   scroller: Scroller = new Scroller()
 
   @Builder
@@ -111,84 +115,7 @@ struct Index {
   build() {
     Stack() {
       Scroll(this.scroller) {
-
-
         Column({space: 8}) {
-          Divider().strokeWidth(1).color(Color.Red)
-
-
-          Button(){
-            Text('测试一下')
-              .fontSize('10fp')
-              // .lineHeight('64lpx')
-          }
-            .padding({ left: '8lpx', right: '8lpx' })
-            .height('32lpx')
-
-          Button(){
-            Text('测试一下')
-              .fontSize('12fp')
-            // .lineHeight('64lpx')
-          }
-          .padding({ left: '8lpx', right: '8lpx' })
-          .height('40lpx')
-
-          Button(){
-            Text('测试一下')
-              .fontSize('14fp')
-            // .lineHeight('64lpx')
-          }
-          .padding({ left: '8lpx', right: '8lpx' })
-          .height('48lpx')
-
-          Row() {
-            Button(){
-              Text('测试一下')
-                .fontSize('16fp')
-              // .lineHeight('64lpx')
-            }
-            .padding({ left: '8lpx', right: '8lpx' })
-            .height('64lpx')
-            .type(ButtonType
-              .Normal)
-            .borderRadius('8lpx')
-            Button(){
-              Text('测试一下')
-                .fontSize('16fp')
-              // .lineHeight('64lpx')
-            }
-            .padding({ left: '8lpx', right: '8lpx' })
-            .height('64lpx')
-            .type(ButtonType
-              .Normal)
-            .borderRadius('16lpx')
-            Button(){
-              Text('测试一下')
-                .fontSize('16fp')
-              // .lineHeight('64lpx')
-            }
-            .padding({ left: '8lpx', right: '8lpx' })
-            .height('64lpx')
-            .type(ButtonType
-              .Normal)
-            .borderRadius('24lpx')
-            Button(){
-              Text('测试一下')
-                .fontSize('16fp')
-              // .lineHeight('64lpx')
-            }
-            .padding({ left: '8lpx', right: '8lpx' })
-            .height('64lpx')
-            .type(ButtonType
-              .Normal)
-            .borderRadius('32lpx')
-
-            Button('测试一下')
-          }
-
-
-
-
           // 搜索栏
           this.renderSearchBar()
           // 轮播图
@@ -284,6 +211,12 @@ struct Index {
             ]
             // required: true,
           })
+
+          WuCheckbox({
+            checked: this.checked,
+            label: '男'
+          })
+          Checkbox().shape(CheckBoxShape.ROUNDED_SQUARE)
         }
         .width('100%')
         .height(3000)

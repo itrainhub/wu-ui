@@ -53,7 +53,6 @@ export struct WuButton {
       case 'large':
         size = new ButtonSize(this.theme.spaceXl, this.theme.heightLg, this.theme.fontSizeLg)
     }
-    console.log('size:::', JSON.stringify(size))
 
     return size
   }

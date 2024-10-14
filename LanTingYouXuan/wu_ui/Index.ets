@@ -15,6 +15,8 @@ export { WuBackTop } from './src/main/ets/components/backtop'
 export { WuStepper } from './src/main/ets/components/stepper'
 export { WuForm, WuFormRule } from './src/main/ets/components/form'
 export { WuField } from './src/main/ets/components/field'
+export { WuCheckbox } from './src/main/ets/components/checkbox'
+export { WuCheckboxGroup, WuCheckboxGroupContext } from './src/main/ets/components/checkbox/checkbox-group'
 
 export default class WuUI {
   static init = WuStorage.init

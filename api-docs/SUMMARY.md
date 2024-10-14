@@ -8,6 +8,7 @@
     * [Button 按钮](basic/button.md)
     * [Icon 图标](basic/icon.md)
 * 表单组件
+    * [Checkbox 复选框](form/checkbox.md)
     * [Field 输入框](form/field.md)
     * [Form 表单](form/form.md)
     * [Search 搜索](form/search.md)

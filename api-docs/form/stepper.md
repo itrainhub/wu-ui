@@ -18,7 +18,7 @@ import { WuStepper } from '@itrain/wu-ui'
 | ------------ | ---------------------------------- | ------- | -------- | -------- |
 | value        | 步进器数量值                       | number  | 是       |          |
 | shape        | 风格，<br>可选 `round` 与 `square` | string  | 否       | 'square' |
-| disableInput | 是否禁用输入框                     | boolean | 否       | False    |
+| disableInput | 是否禁用输入框                     | boolean | 否       | false    |
 
 ### Events
 
