@@ -6,7 +6,7 @@ Wu-ui 是一套简单易用的 `HarmonyOS NEXT` (纯血鸿蒙)开源 UI 组件�
 
 ## 快速上手
 
-请阅读[快速上手](guide/quickstart.md)章节，通过该章节你可以了解到 Wu-ui 的安装方法和基本使用姿势。
+请阅读[快速上手](guide/quickstart.md)章节，通过该章节你可以了解到 wu-ui 的安装方法和基本使用方式。
 
 ## 开源协议
 
