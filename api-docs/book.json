@@ -1,0 +1,10 @@
+{
+  "plugins": ["url-embed", "insert-logo"],
+  "pluginsConfig": {
+    "insert-logo": {
+      "url": "./logo.png",
+      "style": "background: none; max-height: 64px; min-height: 64px"
+    }
+  }
+}
+

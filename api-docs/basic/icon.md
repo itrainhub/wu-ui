@@ -12,17 +12,10 @@ import { WuIcon } from '@itrain/wu-ui'
 
 ## 所有图标
 
-<iframe id="icon-iframe" src="./wu-ui-font/index.html" frameborder="no" border="0" scrolling="no" style="width: 100%;"></iframe>
-<script type="text/javascript">
-  const iconFrame = document.getElementById('icon-iframe')
-  iconFrame.onload = () => {
-    var dHeight = iconFrame.contentWindow.document.documentElement.scrollHeight
-    iconFrame.height = dHeight
-    document.querySelector('.book-body .body-inner').onscroll = function(event) {
-      iconFrame.contentWindow.document.querySelector('.toast_box').style.top = event.target.scrollTop + 'px'
-    }
-  }
-</script>
+{% urlembed %}
+./wu-ui-font/index.html
+{% endurlembed %}
+
 ## API
 
 ### @Props
