@@ -1,10 +1,17 @@
 {
-  "plugins": ["url-embed", "insert-logo"],
+  "plugins": ["url-embed", "insert-logo", "donate"],
   "pluginsConfig": {
     "insert-logo": {
-      "url": "./logo.png",
+      "url": "/logo.png",
       "style": "background: none; max-height: 64px; min-height: 64px"
+    },
+    "donate": {
+      "wechat": "/images/wx.png",
+      "alipay": "/images/zfb.png",
+      "title": "",
+      "button": "赞赏",
+      "alipayText": "",
+      "wechatText": ""
     }
   }
 }
-
