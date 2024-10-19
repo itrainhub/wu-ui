@@ -20,4 +20,8 @@
     * [CountDown 倒计时](display/countdown.md)
     * [Divider 分割线](display/divider.md)
     * [Splash 过渡页](display/splash.md)
+* 反馈组件
+    * [Loading 加载](feedback/loading.md)
+* 业务组件
+    * [Card 商品卡片](business/card.md)
 

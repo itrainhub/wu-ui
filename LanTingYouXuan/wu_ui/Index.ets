@@ -17,6 +17,8 @@ export { WuForm, WuFormRule } from './src/main/ets/components/form'
 export { WuField } from './src/main/ets/components/field'
 export { WuCheckbox } from './src/main/ets/components/checkbox'
 export { WuCheckboxGroup, WuCheckboxGroupContext } from './src/main/ets/components/checkbox/checkbox-group'
+export { WuCard, WuCardProps } from './src/main/ets/components/card'
+export { WuLoading } from './src/main/ets/components/loading'
 
 export default class WuUI {
   static init = WuStorage.init

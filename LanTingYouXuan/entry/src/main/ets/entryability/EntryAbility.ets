@@ -16,12 +16,16 @@ export default class EntryAbility extends UIAbility {
     // Main window is created, set main page for this ability
     hilog.info(0x0000, 'testTag', '%{public}s', 'Ability onWindowStageCreate');
 
-    windowStage.loadContent('pages/CheckBoxGroupDemo', (err) => {
+    windowStage.loadContent('pages/LoadingPage', (err) => {
       if (err.code) {
         hilog.error(0x0000, 'testTag', 'Failed to load the content. Cause: %{public}s', JSON.stringify(err) ?? '');
         return;
       }
       WuUI.init(windowStage)
+      WuUI.setThemeStyles({
+        primary: '#d81e06',
+      })
+
       hilog.info(0x0000, 'testTag', 'Succeeded in loading the content.');
     });
   }
