@@ -19,6 +19,7 @@ export { WuCheckbox } from './src/main/ets/components/checkbox'
 export { WuCheckboxGroup, WuCheckboxGroupContext } from './src/main/ets/components/checkbox/checkbox-group'
 export { WuCard, WuCardProps } from './src/main/ets/components/card'
 export { WuLoading } from './src/main/ets/components/loading'
+export { WuSubmitBar } from './src/main/ets/components/submitbar'
 
 export default class WuUI {
   static init = WuStorage.init

@@ -2,12 +2,8 @@ import { router } from '@kit.ArkUI'
 import { defaultStyles, WU_THEME_NAMESPACE } from '../../theme-chalk'
 import { WuThemeStyleRecord } from '../../theme-chalk/types'
 import { noop } from '../../utils/Common'
+import { splitPrice } from '../../utils/PriceUtil'
 import { WuCardProps } from './types'
-
-interface WuPricePart {
-  integerPart: string
-  decimalPart: string
-}
 
 @Component
 export struct WuCard {
@@ -33,14 +29,6 @@ export struct WuCard {
   @BuilderParam customNum: () => void = this.renderNum
   @BuilderParam customFooter: () => void = this.renderFooter
   @BuilderParam customTag: () => void = this.renderTag
-
-  private splitPrice(price: number): WuPricePart {
-    const parts: string[] = price.toFixed(2).split('.')
-    return {
-      integerPart: parts[0],
-      decimalPart: parts[1],
-    }
-  }
 
   @Builder
   renderThumb() {
@@ -84,11 +72,11 @@ export struct WuCard {
     Text() {
       Span(this.currency)
         .fontSize(this.theme.fontSizeSm)
-      Span(this.splitPrice(this.price).integerPart)
+      Span(splitPrice(this.price).integerPart)
         .fontSize(this.theme.fontSizeXl)
         .fontWeight(FontWeight.Bold)
       Span('.')
-      Span(this.splitPrice(this.price).decimalPart)
+      Span(splitPrice(this.price).decimalPart)
         .fontSize(this.theme.fontSizeSm)
     }
       .fontColor(this.theme.primary)

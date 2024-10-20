@@ -24,4 +24,5 @@
     * [Loading 加载](feedback/loading.md)
 * 业务组件
     * [Card 商品卡片](business/card.md)
+    * [SubmitBar 提交订单栏](business/submitbar.md)
 

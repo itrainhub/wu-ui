@@ -53,7 +53,7 @@ export struct WuCheckbox {
     Row({space: this.theme.spaceXs as string}) {
       Checkbox()
         .select($$this.checked)
-        .height('24lpx')
+        .height(this.theme.heightXs)
         .aspectRatio(1)
         .shape(this.shape === 'round' ? CheckBoxShape.CIRCLE : CheckBoxShape.ROUNDED_SQUARE)
         .selectedColor(this.checkedColor)
