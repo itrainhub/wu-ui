@@ -5,6 +5,7 @@
     "pages/CheckBoxGroupDemo",
     "pages/CardDemo",
     "pages/LoadingPage",
-    "pages/SubmitBarDemo"
+    "pages/SubmitBarDemo",
+    "pages/ActionBarDemo"
   ]
 }

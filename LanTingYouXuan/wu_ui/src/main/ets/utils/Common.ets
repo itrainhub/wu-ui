@@ -6,3 +6,7 @@ export const nextTick = (callback: () => void, time = 300) => {
     callback()
   }, time)
 }
+
+export const format99 = (val: number) => {
+  return val > 99 ? '99+' : val.toString()
+}
