@@ -44,7 +44,7 @@ struct Index {
 
   @Builder
   _renderSearchLeft() {
-    WuIcon({ name: 'scan', fontSize: 24, color: Color.White })
+    WuIcon({ name: 'scan', iconSize: 24, color: Color.White })
   }
 
   @Builder

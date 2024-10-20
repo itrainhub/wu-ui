@@ -89,7 +89,7 @@ export struct WuSearch {
           // 是否可删除图标
           Row({space: this.theme.spaceXs as string}) {
             if (this.clearable) {
-              WuIcon({name: 'round_close_fill', color: this.theme.lightGray, fontSize: this.theme.fontSizeSm})
+              WuIcon({name: 'round_close_fill', color: this.theme.lightGray, iconSize: this.theme.fontSizeSm})
                 .onClick((event: ClickEvent) => {
                   this.onClear(event, this.value)
                   this.value = ''

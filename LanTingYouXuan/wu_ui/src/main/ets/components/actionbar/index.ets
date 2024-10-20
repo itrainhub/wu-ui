@@ -20,9 +20,9 @@ export struct WuActionBar {
   @Builder
   _renderIcons() {
     Row({space: this.theme.spaceSm as string}) {
-      WuIcon({name: 'message', fontSize: this.theme.heightMd})
+      WuIcon({name: 'message', iconSize: this.theme.heightMd})
       Stack() {
-        WuIcon({name: 'cart', fontSize: this.theme.heightMd})
+        WuIcon({name: 'cart', iconSize: this.theme.heightMd})
 
         Text(this.cartBadge !== 0 ? format99(this.cartBadge) : '')
           .fontSize(this.theme.fontSizeXs)

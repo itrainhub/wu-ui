@@ -14,7 +14,7 @@ export struct WuBackTop {
   build() {
     if (this.visible) {
       Column() {
-        WuIcon({name: 'top', fontSize: this.theme.fontSizeXl, color: this.theme.ghostWhite})
+        WuIcon({name: 'top', iconSize: this.theme.fontSizeXl, color: this.theme.ghostWhite})
       }
       .width(32)
       .height(32)
