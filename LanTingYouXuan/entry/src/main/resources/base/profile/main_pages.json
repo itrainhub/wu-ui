@@ -6,6 +6,8 @@
     "pages/CardDemo",
     "pages/LoadingPage",
     "pages/SubmitBarDemo",
-    "pages/ActionBarDemo"
+    "pages/ActionBarDemo",
+    "pages/EmptyDemo",
+    "pages/PopupDemo"
   ]
 }

@@ -14,13 +14,13 @@ import { WuLoading } from '@itrain/wu-ui'
 
 ### @Props
 
-| 名称     | 说明                                     | 类型             | 是否必需 | 默认值     |
-| -------- | ---------------------------------------- | ---------------- | -------- | ---------- |
-| iconSize | 加载图标大小                             | string \| number | 否       | '48lpx'    |
-| type     | 类型，<br>可选值为 `spinner`、`circular` | string           | 否       | 'circular' |
-| color    | 颜色                                     | string           | 否       |            |
-| text     | 加载方案                                 | ResourceStr      | 否       |            |
-| vertical | 是否垂直排列图标与文字内容               | boolean          | 否       | false      |
+| 名称     | 说明                                     | 类型                 | 是否必需 | 默认值     |
+| -------- | ---------------------------------------- | -------------------- | -------- | ---------- |
+| iconSize | 加载图标大小                             | string &#x7c; number | 否       | '48lpx'    |
+| type     | 类型，<br>可选值为 `spinner`、`circular` | string               | 否       | 'circular' |
+| color    | 颜色                                     | string               | 否       |            |
+| text     | 加载方案                                 | ResourceStr          | 否       |            |
+| vertical | 是否垂直排列图标与文字内容               | boolean              | 否       | false      |
 
 ### @BuilderParam
 

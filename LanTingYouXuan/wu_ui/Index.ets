@@ -1,5 +1,5 @@
 import { setThemeStyles } from './src/main/ets/theme-chalk'
-import WuStorage from './src/main/ets/utils/Storage'
+import WuGlobalData from './src/main/ets/utils/GlobalData'
 
 // 初始化主题样式数据
 setThemeStyles({})
@@ -21,8 +21,10 @@ export { WuCard, WuCardProps } from './src/main/ets/components/card'
 export { WuLoading } from './src/main/ets/components/loading'
 export { WuSubmitBar } from './src/main/ets/components/submitbar'
 export { WuActionBar } from './src/main/ets/components/actionbar'
+export { WuEmpty } from './src/main/ets/components/empty'
+export { WuPopup } from './src/main/ets/components/popup'
 
 export default class WuUI {
-  static init = WuStorage.init
+  static init = WuGlobalData.init
   static setThemeStyles = setThemeStyles
 }
