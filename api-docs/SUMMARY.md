@@ -7,6 +7,7 @@
 * 基础组件
     * [Button 按钮](basic/button.md)
     * [Icon 图标](basic/icon.md)
+    * [Image 图片](basic/image.md)
     * [Popup 弹出层](basic/popup.md)
 * 表单组件
     * [Checkbox 复选框](form/checkbox.md)

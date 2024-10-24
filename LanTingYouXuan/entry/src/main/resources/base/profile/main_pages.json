@@ -8,6 +8,7 @@
     "pages/SubmitBarDemo",
     "pages/ActionBarDemo",
     "pages/EmptyDemo",
-    "pages/PopupDemo"
+    "pages/PopupDemo",
+    "pages/ImageDemo"
   ]
 }

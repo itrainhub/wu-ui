@@ -23,6 +23,7 @@ export { WuSubmitBar } from './src/main/ets/components/submitbar'
 export { WuActionBar } from './src/main/ets/components/actionbar'
 export { WuEmpty } from './src/main/ets/components/empty'
 export { WuPopup } from './src/main/ets/components/popup'
+export { WuImage } from './src/main/ets/components/image'
 
 export default class WuUI {
   static init = WuGlobalData.init

@@ -36,6 +36,7 @@ export default class WuGlobalData {
       const winRect = data.getWindowProperties().windowRect
       WuGlobalData.screenWidth = px2vp(winRect.width)
       WuGlobalData.screenHeight = px2vp(winRect.height)
+      console.log('winRect:', JSON.stringify(winRect))
     })
   }
 }

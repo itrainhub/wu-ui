@@ -175,7 +175,6 @@ struct WuPopupDialog {
     //   minHeight: this.popupHeight,
     // })
     .clip(true)
-    .padding(this.theme.spaceSm)
     .borderRadius(this.connerRadius)
     .backgroundColor(Color.White)
     .visibility(this.showFlag)
