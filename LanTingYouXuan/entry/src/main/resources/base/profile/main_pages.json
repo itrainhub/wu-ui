@@ -9,6 +9,7 @@
     "pages/ActionBarDemo",
     "pages/EmptyDemo",
     "pages/PopupDemo",
-    "pages/ImageDemo"
+    "pages/ImageDemo",
+    "pages/CellDemo"
   ]
 }

@@ -6,6 +6,7 @@
     * [定制主题](guide/theme-custom.md)
 * 基础组件
     * [Button 按钮](basic/button.md)
+    * [Cell 单元格](basic/cell.md)
     * [Icon 图标](basic/icon.md)
     * [Image 图片](basic/image.md)
     * [Popup 弹出层](basic/popup.md)
