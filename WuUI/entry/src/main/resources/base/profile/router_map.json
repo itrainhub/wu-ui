@@ -1,0 +1,99 @@
+{
+  "routerMap": [
+    {
+      "name": "button",
+      "pageSourceFile": "src/main/ets/pages/basic/ButtonDemo.ets",
+      "buildFunction": "renderButton"
+    },
+    {
+      "name": "cell",
+      "pageSourceFile": "src/main/ets/pages/basic/CellDemo.ets",
+      "buildFunction": "renderCell"
+    },
+    {
+      "name": "icon",
+      "pageSourceFile": "src/main/ets/pages/basic/IconDemo.ets",
+      "buildFunction": "renderIcon"
+    },
+    {
+      "name": "image",
+      "pageSourceFile": "src/main/ets/pages/basic/ImageDemo.ets",
+      "buildFunction": "renderImage"
+    },
+    {
+      "name": "popup",
+      "pageSourceFile": "src/main/ets/pages/basic/PopupDemo.ets",
+      "buildFunction": "renderPopup"
+    },
+    {
+      "name": "checkbox",
+      "pageSourceFile": "src/main/ets/pages/form/CheckboxDemo.ets",
+      "buildFunction": "renderCheckbox"
+    },
+    {
+      "name": "field",
+      "pageSourceFile": "src/main/ets/pages/form/FieldDemo.ets",
+      "buildFunction": "renderField"
+    },
+    {
+      "name": "search",
+      "pageSourceFile": "src/main/ets/pages/form/SearchDemo.ets",
+      "buildFunction": "renderSearch"
+    },
+    {
+      "name": "stepper",
+      "pageSourceFile": "src/main/ets/pages/form/StepperDemo.ets",
+      "buildFunction": "renderStepper"
+    },
+    {
+      "name": "backtop",
+      "pageSourceFile": "src/main/ets/pages/navigation/BackTopDemo.ets",
+      "buildFunction": "renderBackTop"
+    },
+    {
+      "name": "grid",
+      "pageSourceFile": "src/main/ets/pages/navigation/GridDemo.ets",
+      "buildFunction": "renderGrid"
+    },
+    {
+      "name": "countdown",
+      "pageSourceFile": "src/main/ets/pages/display/CountDownDemo.ets",
+      "buildFunction": "renderCountDown"
+    },
+    {
+      "name": "divider",
+      "pageSourceFile": "src/main/ets/pages/display/DividerDemo.ets",
+      "buildFunction": "renderDivider"
+    },
+    {
+      "name": "empty",
+      "pageSourceFile": "src/main/ets/pages/display/EmptyDemo.ets",
+      "buildFunction": "renderEmpty"
+    },
+    {
+      "name": "splash",
+      "pageSourceFile": "src/main/ets/pages/display/SplashDemo.ets",
+      "buildFunction": "renderSplash"
+    },
+    {
+      "name": "loading",
+      "pageSourceFile": "src/main/ets/pages/feedback/LoadingPage.ets",
+      "buildFunction": "renderLoading"
+    },
+    {
+      "name": "actionbar",
+      "pageSourceFile": "src/main/ets/pages/business/ActionBarDemo.ets",
+      "buildFunction": "renderActionBar"
+    },
+    {
+      "name": "card",
+      "pageSourceFile": "src/main/ets/pages/business/CardDemo.ets",
+      "buildFunction": "renderCard"
+    },
+    {
+      "name": "submitbar",
+      "pageSourceFile": "src/main/ets/pages/business/SubmitBarDemo.ets",
+      "buildFunction": "renderSubmitBar"
+    }
+  ]
+}
