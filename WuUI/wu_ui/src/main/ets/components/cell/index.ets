@@ -99,6 +99,9 @@ export struct WuCell {
       })
       .padding({top: this.theme.spaceMd, bottom: this.theme.spaceMd})
       .stateStyles({
+        normal: {
+          .backgroundColor(this.bgColor)
+        },
         pressed: {
           .backgroundColor(this.clickable || this.isLink ? this.theme.lightGray : this.bgColor)
         }
