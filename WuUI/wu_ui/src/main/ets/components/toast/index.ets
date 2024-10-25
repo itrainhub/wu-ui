@@ -12,9 +12,9 @@ type WuToastPlacement = 'top' | 'bottom' | 'center'
 
 interface WuToastOption {
   message: string
+  type: WuToastType
   icon: string
   iconSize: Length
-  type: WuToastType
   placement: WuToastPlacement
   overlay: boolean
   duration: number
@@ -162,7 +162,7 @@ class WuToastClass {
     // 打开自定义对话框
     this.ctx.getPromptAction().openCustomDialog(this.contentNode, {
       isModal: options.overlay,
-      autoCancel: !options.forbidClick,
+      autoCancel: !options.forbidClick && options.duration !== 0,
       alignment: align.alignment,
       offset: align.offset,
     }).then(() => {
