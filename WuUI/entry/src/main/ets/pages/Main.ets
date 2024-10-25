@@ -46,6 +46,11 @@ struct Main {
           path: 'popup',
           name: 'Popup',
           label: '弹出层',
+        },
+        {
+          path: 'toast',
+          name: 'Toast',
+          label: '轻提示',
         }
       ],
     },
@@ -187,6 +192,6 @@ struct Main {
     .title('WuUI 组件库')
     .titleMode(NavigationTitleMode.Mini)
     .hideBackButton(true)
-    .attributeModifier(new ContainerModifier<NavigationAttribute>(true))
+    .attributeModifier(new ContainerModifier<NavigationAttribute>())
   }
 }

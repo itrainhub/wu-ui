@@ -1,9 +1,9 @@
 export class ContainerModifier<Attribute extends CommonAttribute> implements AttributeModifier<Attribute> {
-  private page: boolean
+  private inset: boolean
 
-  // page: 是否页面容器
-  constructor(page: boolean = false) {
-    this.page = page
+  // inset: 是否页面容器
+  constructor(inset: boolean = false) {
+    this.inset = inset
   }
 
   applyNormalAttribute(instance: Attribute): void {
@@ -11,9 +11,8 @@ export class ContainerModifier<Attribute extends CommonAttribute> implements Att
       .width('100%')
       .height('100%')
       .align(Alignment.TopStart)
-    if (this.page) {
-      instance.backgroundColor($r('app.color.page_background_color'))
-    } else {
+      .backgroundColor($r('app.color.page_background_color'))
+    if (this.inset) {
       instance.padding(16)
     }
   }

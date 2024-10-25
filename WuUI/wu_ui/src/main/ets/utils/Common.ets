@@ -31,3 +31,14 @@ export function runWithAnimation(fn: Function, duration: number = 400, curve: Cu
     fn()
   })
 }
+
+/**
+ * 判断是否合法的URL地址
+ * @param name
+ * @returns
+ */
+export function isValidUrl(name: string) {
+  // 通过正则表达式检查是否为有效的 URL
+  const urlPattern = /^(https?:)?\/\//
+  return urlPattern.test(name)
+}

@@ -26,6 +26,11 @@
       "buildFunction": "renderPopup"
     },
     {
+      "name": "toast",
+      "pageSourceFile": "src/main/ets/pages/basic/ToastDemo.ets",
+      "buildFunction": "renderToast"
+    },
+    {
       "name": "checkbox",
       "pageSourceFile": "src/main/ets/pages/form/CheckboxDemo.ets",
       "buildFunction": "renderCheckbox"

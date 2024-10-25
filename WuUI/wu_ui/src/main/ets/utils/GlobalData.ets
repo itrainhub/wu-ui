@@ -10,6 +10,8 @@ export default class WuGlobalData {
   public static screenWidth: number
   // 屏幕高度
   public static screenHeight: number
+  // UI 上下文
+  public static context: UIContext
 
   /**
    * 初始化组件库
@@ -22,6 +24,8 @@ export default class WuGlobalData {
         return
       }
 
+      // 上下文
+      WuGlobalData.context = data.getUIContext()
       // 注册字体图标
       data.getUIContext().getFont().registerFont({
         familyName: 'wuicon',
