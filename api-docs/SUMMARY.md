@@ -10,6 +10,7 @@
     * [Icon 图标](basic/icon.md)
     * [Image 图片](basic/image.md)
     * [Popup 弹出层](basic/popup.md)
+    * [Toast 轻提示](basic/toast.md)
 * 表单组件
     * [Checkbox 复选框](form/checkbox.md)
     * [Field 输入框](form/field.md)
