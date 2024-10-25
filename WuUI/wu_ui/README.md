@@ -79,6 +79,54 @@ struct Splash {
 
 所有组件的使用方式详见[官方文档](https://wuui.gitbook.io/wuui)。
 
+## 计划功能
+
+- [x] 定制主题
+- [x] Button 按钮
+- [x] Cell 单元格
+- [x] Icon 图标
+- [x] Image 图片
+- [ ] Layout 布局
+- [x] Popup 弹出层
+- [ ] Toast 轻提示
+- [ ] Calendar 日历
+- [ ] Cascader 级联选择
+- [x] Checkbox 复选框
+- [ ] DatePicker 日期选择
+- [ ] Field 输入框
+- [ ] Form 表单
+- [ ] Radio 单选框
+- [ ] Rate 评分
+- [x] Search 搜索
+- [ ] Signature 签名
+- [ ] Stepper 步进器
+- [ ] Switch 开关
+- [ ] TimePicker 时间选择器
+- [ ] Uploader 文件上传
+- [ ] ActionSheet 动作面板
+- [ ] Barrage 弹幕
+- [ ] Dialog 弹出框
+- [x] Loading 加载
+- [ ] Notify 消息通知
+- [ ] SwipeCell 滑动单元格
+- [x] CountDown 倒计时
+- [ ] Divider 分割线
+- [ ] Empty 空状态
+- [ ] Steps 步骤条
+- [ ] Watermark 水印
+- [x] ActionBar 商品动作栏
+- [x] BackTop 回到顶部
+- [x] Grid 宫格
+- [ ] Sidebar 侧边栏
+- [ ] AddressEdit 地址编辑
+- [ ] AddressList 地址列表
+- [ ] Area 省市区选择
+- [x] Card 商品卡片
+- [ ] ContactCard 联系人卡片
+- [ ] ContactEdit 联系人编辑
+- [ ] ContactList 联系人列表
+- [x] SubmitBar 提交订单栏
+
 ## 开源协议
 
 本项目基于 MIT 开源协议，可自由地享受和参与开源。
