@@ -224,7 +224,7 @@ export struct ButtonDemo {
         }
         .width('100%')
       }
-      .attributeModifier(new ContainerModifier<ScrollAttribute>())
+      .attributeModifier(new ContainerModifier<ScrollAttribute>(true))
     }
     .title('Button 按钮')
   }
