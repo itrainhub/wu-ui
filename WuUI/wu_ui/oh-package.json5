@@ -1,6 +1,6 @@
 {
   "name": "@itrain/wu-ui",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "一套简单易用的基于 HarmonyOS NEXT API12 的开源 UI 组件库",
   "keywords": [
     "UI",
