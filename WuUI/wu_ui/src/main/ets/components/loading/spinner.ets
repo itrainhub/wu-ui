@@ -2,13 +2,13 @@ import { hexToRgb, toVp } from "./util";
 
 @Component
 export struct WuSpinner {
-  @Prop iconSize: string | number
+  @Prop iconSize: Length
   @Prop color: string
 
   private angle: number = 0; // 旋转角度
 
   // 画布宽度
-  private canvasWidth: number = toVp(this.iconSize)
+  private canvasWidth: number = toVp(this.iconSize.toString())
   // 菊花的圈数
   private numberOfCircles: number = 12
   // 花瓣图形宽高

@@ -16,6 +16,10 @@ export function toVp(size: string | number): number {
     return px2vp(parseFloat(size))
   }
 
+  if (!isNaN(Number(size))) {
+    return Number(size)
+  }
+
   throw new Error('字符串长度单位应为lpx或px')
 }
 

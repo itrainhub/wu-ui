@@ -2,14 +2,14 @@ import { toVp } from "./util"
 
 @Component
 export struct WuCircular {
-  @Prop iconSize: string | number
+  @Prop iconSize: Length
   @Prop color: string
 
   private strokeWidth: number = toVp('4lpx')
   private angle: number = 0
 
   // 画布宽度
-  private canvasWidth: number = toVp(this.iconSize)
+  private canvasWidth: number = toVp((this.iconSize.toString()))
   // 圆半径
   private radius: number = this.canvasWidth / 2 - this.strokeWidth
     // 定时器id

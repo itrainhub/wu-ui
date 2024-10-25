@@ -6,7 +6,7 @@ import { WuSpinner } from './spinner'
 @Component
 export struct WuLoading {
   @StorageProp(WU_THEME_NAMESPACE) theme: WuThemeStyleRecord = defaultStyles
-  @Prop iconSize: string | number = '48lpx'
+  @Prop iconSize: Length = '48lpx'
   @Prop type: 'circular' | 'spinner' = 'circular'
   @Prop color: string = this.theme.lightGray as string
   @Prop text: ResourceStr = ''
@@ -22,7 +22,7 @@ export struct WuLoading {
         iconSize: this.iconSize,
         color: this.color
       })
-    }else {
+    } else {
       WuSpinner({
         iconSize: this.iconSize,
         color: this.color,
