@@ -1,6 +1,6 @@
 import { WuThemeStyleValue } from '../../theme-chalk/types'
 
-export class ButtonSize {
+export class WuButtonSize {
   padding: WuThemeStyleValue
   height: WuThemeStyleValue
   fontSize: WuThemeStyleValue

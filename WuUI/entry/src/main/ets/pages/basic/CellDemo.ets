@@ -1,5 +1,13 @@
 import { WuCell, WuCellGroup } from '@itrain/wu-ui'
 
+@Extend(Text)
+function title() {
+  .fontSize('14fp')
+  .fontWeight(FontWeight.Bold)
+  .fontColor(Color.Gray)
+  .width('100%')
+}
+
 @Builder
 export function renderCell() {
   CellDemo()

@@ -1,4 +1,5 @@
 import { WuCell, WuCellGroup } from '@itrain/wu-ui'
+import { ContainerModifier } from '../styles/Page'
 
 interface IDemoComponent {
   path: string
@@ -186,8 +187,6 @@ struct Main {
     .title('WuUI 组件库')
     .titleMode(NavigationTitleMode.Mini)
     .hideBackButton(true)
-    .width('100%')
-    .height('100%')
-    .backgroundColor('#f6f6f6')
+    .attributeModifier(new ContainerModifier<NavigationAttribute>(true))
   }
 }

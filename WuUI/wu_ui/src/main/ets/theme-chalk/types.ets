@@ -69,6 +69,7 @@ export interface WuLength {
   heightSm: Length
   heightMd: Length
   heightLg: Length
+  heightXl: Length
   borderRadiusXs: Length
   borderRadiusSm: Length
   borderRadiusMd: Length

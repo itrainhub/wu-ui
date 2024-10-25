@@ -6,7 +6,7 @@ import { router } from '@kit.ArkUI'
 struct Splash {
   aboutToAppear(): void {
     WuUI.setThemeStyles({
-      primary: '#d81e06',
+      // primary: '#d81e06',
     })
   }
 

@@ -1,10 +1,10 @@
 import { defaultStyles, WU_THEME_NAMESPACE } from "../../theme-chalk"
 import { WuThemeStyleRecord, WuShape, WuThemeType } from "../../theme-chalk/types"
-import { ButtonSize } from "./types"
+import { WuButtonSize } from "./types"
 
 @Extend(Button)
-function buttonSize(size: ButtonSize) {
-  .width('auto')
+function buttonSize(size: WuButtonSize, block: boolean) {
+  .width(block ? '100%' : undefined)
   .height(size.height)
   .padding({ left: size.padding, right: size.padding })
   .fontSize(size.fontSize)
@@ -15,10 +15,11 @@ export struct WuButton {
   @StorageProp(WU_THEME_NAMESPACE) theme: WuThemeStyleRecord = defaultStyles
   @Prop type: WuThemeType = 'default'
   @Prop text: ResourceStr = '按钮'
-  @Prop shape: WuShape = 'square'
-  @Prop btnSize: 'mini' | 'small' | 'normal' | 'large' = 'normal'
+  @Prop shape: WuShape
+  @Prop btnSize: 'mini' | 'small' | 'normal' | 'large' | 'huge' = 'normal'
   @Prop plain: boolean = false
   @Prop disabled: boolean = false
+  @Prop block: boolean = false
 
   /**
    * 计算获取文字颜色
@@ -39,19 +40,22 @@ export struct WuButton {
    * @returns
    */
   private getBtnSize() {
-    let size: ButtonSize = new ButtonSize()
+    let size: WuButtonSize = new WuButtonSize()
     switch (this.btnSize) {
       case 'mini':
-        size = new ButtonSize(this.theme.spaceXs, this.theme.heightXs, this.theme.fontSizeXs)
+        size = new WuButtonSize(this.theme.spaceXs, this.theme.heightXs, this.theme.fontSizeXs)
         break
       case 'small':
-        size = new ButtonSize(this.theme.spaceSm, this.theme.heightSm, this.theme.fontSizeSm)
+        size = new WuButtonSize(this.theme.spaceSm, this.theme.heightSm, this.theme.fontSizeSm)
         break
       case 'normal':
-        size = new ButtonSize(this.theme.spaceMd, this.theme.heightMd, this.theme.fontSizeMd)
+        size = new WuButtonSize(this.theme.spaceMd, this.theme.heightMd, this.theme.fontSizeMd)
         break
       case 'large':
-        size = new ButtonSize(this.theme.spaceXl, this.theme.heightLg, this.theme.fontSizeLg)
+        size = new WuButtonSize(this.theme.spaceXl, this.theme.heightLg, this.theme.fontSizeLg)
+        break
+      case 'huge':
+        size = new WuButtonSize(this.theme.spaceXl, this.theme.heightXl, this.theme.fontSizeXl)
     }
 
     return size
@@ -66,10 +70,10 @@ export struct WuButton {
     }
       .backgroundColor(this.plain ? Color.Transparent : this.theme[this.type])
       .type(ButtonType.Normal)
-      .borderRadius(this.shape === 'square' ? 4 : '50%')
+      .borderRadius(typeof this.shape === 'undefined' ? this.theme.borderRadiusXs : this.shape === 'square' ? 0 : '50%')
       .borderWidth(1)
       .borderColor(this.type === 'default' ? this.theme.lightGray : this.theme[this.type])
-      .buttonSize(this.getBtnSize())
+      .buttonSize(this.getBtnSize(), this.block)
       .enabled(!this.disabled)
   }
 }
