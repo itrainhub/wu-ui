@@ -21,6 +21,8 @@ export struct WuCell {
   @Prop clickable: boolean = false
   // 是否显示内边框
   @Prop bordered: boolean = true
+  // 是否使内容垂直居中
+  @Prop center: boolean = false
 
   @BuilderParam customTitle: () => void = this._renderTitle
   @BuilderParam customLabel: () => void = this._renderLabel
@@ -61,7 +63,7 @@ export struct WuCell {
     Row() {
       Flex({
         justifyContent: FlexAlign.SpaceBetween,
-        alignItems: ItemAlign.Center,
+        alignItems: this.center ? ItemAlign.Center : ItemAlign.Start,
       }) {
         // 左侧
         Column({ space: this.theme.spaceXs as string }) {
