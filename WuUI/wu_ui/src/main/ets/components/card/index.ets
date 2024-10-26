@@ -172,13 +172,8 @@ export struct WuCard {
       .justifyContent(FlexAlign.End)
     }
     .width('100%')
-    .margin({bottom: this.theme.spaceSm})
     .padding(this.theme.spaceXs)
     .backgroundColor(Color.White)
-    // .borderWidth({
-    //   bottom: 1
-    // })
-    // .borderColor('#eaeaea')
   }
 }
 
