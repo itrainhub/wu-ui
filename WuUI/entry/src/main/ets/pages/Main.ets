@@ -131,6 +131,11 @@ struct Main {
           name: 'Loading',
           label: '加载',
         },
+        {
+          path: 'swipecell',
+          name: 'SwipeCell',
+          label: '滑动单元格',
+        },
       ],
     },
     {

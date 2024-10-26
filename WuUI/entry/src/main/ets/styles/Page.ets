@@ -16,8 +16,4 @@ export class ContainerModifier<Attribute extends CommonAttribute> implements Att
       instance.padding(16)
     }
   }
-
-  setBg(instance: Attribute) {
-    instance.backgroundColor($r('app.color.page_background_color'))
-  }
 }

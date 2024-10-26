@@ -108,7 +108,7 @@ struct Splash {
 - [ ] Dialog 弹出框
 - [x] Loading 加载
 - [ ] Notify 消息通知
-- [ ] SwipeCell 滑动单元格
+- [x] SwipeCell 滑动单元格
 - [x] CountDown 倒计时
 - [x] Divider 分割线
 - [x] Empty 空状态

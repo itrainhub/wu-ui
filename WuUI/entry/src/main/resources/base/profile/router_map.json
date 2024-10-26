@@ -82,8 +82,13 @@
     },
     {
       "name": "loading",
-      "pageSourceFile": "src/main/ets/pages/feedback/LoadingPage.ets",
+      "pageSourceFile": "src/main/ets/pages/feedback/LoadingDemo.ets",
       "buildFunction": "renderLoading"
+    },
+    {
+      "name": "swipecell",
+      "pageSourceFile": "src/main/ets/pages/feedback/SwipeCellDemo.ets",
+      "buildFunction": "renderSwipeCell"
     },
     {
       "name": "actionbar",

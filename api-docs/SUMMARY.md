@@ -27,6 +27,7 @@
     * [Splash 过渡页](display/splash.md)
 * 反馈组件
     * [Loading 加载](feedback/loading.md)
+    * [SwipeCell 滑动单元格](feedback/swipecell.md)
 * 业务组件
     * [ActionBar 商品动作栏](business/actionbar.md)
     * [Card 商品卡片](business/card.md)
