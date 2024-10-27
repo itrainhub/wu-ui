@@ -27,6 +27,7 @@ export { WuImage } from './src/main/ets/components/image'
 export { WuCell, WuCellGroup } from './src/main/ets/components/cell'
 export { WuToast } from './src/main/ets/components/toast'
 export { WuSwipeCell } from './src/main/ets/components/swipecell'
+export { WuTag } from './src/main/ets/components/tag'
 
 export default class WuUI {
   static init = WuGlobalData.init

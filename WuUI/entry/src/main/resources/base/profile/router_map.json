@@ -81,6 +81,11 @@
       "buildFunction": "renderSplash"
     },
     {
+      "name": "tag",
+      "pageSourceFile": "src/main/ets/pages/display/TagDemo.ets",
+      "buildFunction": "renderTag"
+    },
+    {
       "name": "loading",
       "pageSourceFile": "src/main/ets/pages/feedback/LoadingDemo.ets",
       "buildFunction": "renderLoading"

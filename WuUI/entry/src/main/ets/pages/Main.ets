@@ -120,6 +120,11 @@ struct Main {
           name: 'Splash',
           label: '过渡页',
         },
+        {
+          path: 'tag',
+          name: 'Tag',
+          label: '标签',
+        },
       ],
     },
     {

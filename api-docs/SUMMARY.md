@@ -25,6 +25,7 @@
     * [Divider 分割线](display/divider.md)
     * [Empty 空状态](display/empty.md)
     * [Splash 过渡页](display/splash.md)
+    * [Tag 标签](display/tag.md)
 * 反馈组件
     * [Loading 加载](feedback/loading.md)
     * [SwipeCell 滑动单元格](feedback/swipecell.md)
