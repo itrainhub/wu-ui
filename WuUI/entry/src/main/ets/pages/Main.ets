@@ -94,6 +94,11 @@ struct Main {
           name: 'Grid',
           label: '宫格',
         },
+        {
+          path: 'navbar',
+          name: 'NavBar',
+          label: '导航栏',
+        },
       ],
     },
     {

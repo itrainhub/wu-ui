@@ -61,6 +61,11 @@
       "buildFunction": "renderGrid"
     },
     {
+      "name": "navbar",
+      "pageSourceFile": "src/main/ets/views/navigation/NavBarDemo.ets",
+      "buildFunction": "renderNavBar"
+    },
+    {
       "name": "countdown",
       "pageSourceFile": "src/main/ets/views/display/CountDownDemo.ets",
       "buildFunction": "renderCountDown"
