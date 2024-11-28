@@ -98,7 +98,7 @@ struct Splash {
 - [ ] Radio 单选框
 - [ ] Rate 评分
 - [x] Search 搜索
-- [ ] Signature 签名
+- [x] Signature 签名
 - [x] Stepper 步进器
 - [ ] Switch 开关
 - [ ] TimePicker 时间选择器
