@@ -15,8 +15,10 @@ export struct WuSignature {
   // 背景颜色
   @Prop bgColor: string = this.theme.ghostWhite as string
 
+  // 点击清空按钮触发
+  onClear: () => void = noop
   // 点击确定按钮, 获得图片的 base64 url 字符串数据
-  onOk: (image: string) => void = noop
+  onSubmit: (image: string) => void = noop
 
   // 使用 CanvasRenderingContext2D 中的方法进行绘制
   private settings: RenderingContextSettings = new RenderingContextSettings(true)
@@ -47,11 +49,23 @@ export struct WuSignature {
     this.context.stroke()
   }
 
+  /**
+   * 填充背景颜色
+   */
   fillBgColor() {
     if (this.bgColor !== this.theme.ghostWhite) {
       this.context.fillStyle = this.bgColor
       this.context.fillRect(0, 0, this.cWidth, this.cHeight)
     }
+  }
+
+  /**
+   * 清空签名
+   */
+  handleClear = () => {
+    this.context.clearRect(0, 0, this.cWidth, this.cHeight)
+    this.fillBgColor()
+    this.onClear()
   }
 
   build() {
@@ -96,17 +110,14 @@ export struct WuSignature {
           text: '清空',
           btnSize: 'small',
         })
-          .onClick(() => {
-            this.context.clearRect(0, 0, this.cWidth, this.cHeight)
-            this.fillBgColor()
-          })
+          .onClick(this.handleClear)
         WuButton({
           text: '确认',
           btnSize: 'small',
           type: 'primary',
         })
           .onClick(() => {
-            this.onOk(this.context.toDataURL())
+            this.onSubmit(this.context.toDataURL())
           })
       }
       .width('100%')

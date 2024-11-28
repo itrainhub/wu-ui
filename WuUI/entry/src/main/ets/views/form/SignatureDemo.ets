@@ -1,11 +1,13 @@
 import { WuSignature } from '@itrain/wu-ui'
 import PageContainer from '../../components/PageContainer'
+import { promptAction } from '@kit.ArkUI'
 
 interface SignatureOptions {
   penColor: string
   lineWidth: number
   bgColor: string
-  onOk: (image: string) => void
+  onSubmit: (image: string) => void
+  onClear: () => void
 }
 
 @Builder
@@ -40,8 +42,13 @@ struct SignatureDemo {
   @Builder
   _renderBasic() {
     this._renderCommon('基础用法', {
-      onOk: image => {
+      onSubmit: image => {
         this.image = image
+      },
+      onClear: () => {
+        promptAction.showToast({
+          message: '清空了...',
+        })
       }
     })
   }
@@ -53,7 +60,7 @@ struct SignatureDemo {
   _renderPenColor() {
     this._renderCommon('自定义画笔颜色', {
       penColor: '#df1131',
-      onOk: image => {
+      onSubmit: image => {
         this.image = image
       }
     })
@@ -66,7 +73,7 @@ struct SignatureDemo {
   _renderLineWidth() {
     this._renderCommon('自定义画笔线宽', {
       lineWidth: 10,
-      onOk: image => {
+      onSubmit: image => {
         this.image = image
       }
     })
@@ -79,7 +86,7 @@ struct SignatureDemo {
   _renderBgColor() {
     this._renderCommon('自定义背景颜色', {
       bgColor: '#cccccc',
-      onOk: image => {
+      onSubmit: image => {
         this.image = image
       }
     })
