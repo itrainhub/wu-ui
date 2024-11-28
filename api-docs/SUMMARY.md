@@ -20,6 +20,7 @@
 * 导航组件
     * [BackTop 回到顶部](navigation/backtop.md)
     * [Grid 宫格](navigation/grid.md)
+    * [NavBar 导航栏](navigation/navbar.md)
 * 展示组件
     * [CountDown 倒计时](display/countdown.md)
     * [Divider 分割线](display/divider.md)
