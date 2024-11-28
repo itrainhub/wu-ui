@@ -1,4 +1,5 @@
 import { WuImage } from '@itrain/wu-ui'
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 export function renderImage() {
@@ -16,12 +17,14 @@ export struct ImageDemo {
   }
 
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'Image 图片',
+    }) {
       Column() {
         WuImage({
           // src: $r('app.media.splash2'),
           // src: this.src,
-          src: 'https://developer.huawei.com/allianceCmsResource/resource/HUAWEI_Developer_VUE/images/pc10105.jpg',
+          src: 'https://developer.huawei.com/allianceCmsResource/resource/HUAWEI_Developer_VUE/images/pc1010.jpg',
           preview: true,
           // fit: ImageFit.Fill,
           // shape: 'round',
@@ -32,6 +35,5 @@ export struct ImageDemo {
         })
       }
     }
-    .title('Image 图片')
   }
 }

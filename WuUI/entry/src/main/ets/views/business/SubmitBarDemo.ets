@@ -1,4 +1,5 @@
-import { WuSubmitBar } from '@itrain/wu-ui';
+import { WuSubmitBar } from '@itrain/wu-ui'
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 export function renderSubmitBar() {
@@ -16,7 +17,9 @@ export struct SubmitBarDemo {
   }
 
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'SubmitBar 提交订单栏',
+    }) {
       Column() {
         WuSubmitBar({
           // checkAll: false,
@@ -29,9 +32,7 @@ export struct SubmitBarDemo {
           }
         })
       }
-      .height('100%')
       .width('100%')
     }
-    .title('SubmitBar 提交订单栏')
   }
 }

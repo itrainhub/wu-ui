@@ -1,6 +1,6 @@
-import { WuButton } from "@itrain/wu-ui"
-import { ContainerModifier } from "../../styles/Page"
-import { TitleFontModifier } from "../../styles/Text"
+import { WuButton } from '@itrain/wu-ui'
+import PageContainer from '../../components/PageContainer'
+import { TitleFontModifier } from '../../styles/Text'
 
 @Builder
 export function renderButton() {
@@ -206,26 +206,24 @@ export struct ButtonDemo {
   }
 
   build() {
-    NavDestination() {
-      Scroll() {
-        Column({ space: 24 }) {
-          // 按钮类型
-          this._renderTypes()
-          // 朴素按钮
-          this._renderPlain()
-          // 禁用状态
-          this._renderDisabled()
-          // 按钮形状
-          this._renderShape()
-          // 按钮尺寸
-          this._renderSize()
-          // 块级按钮
-          this._renderBlock()
-        }
-        .width('100%')
+    PageContainer({
+      title: 'Button 按钮',
+    }) {
+      Column({ space: 24 }) {
+        // 按钮类型
+        this._renderTypes()
+        // 朴素按钮
+        this._renderPlain()
+        // 禁用状态
+        this._renderDisabled()
+        // 按钮形状
+        this._renderShape()
+        // 按钮尺寸
+        this._renderSize()
+        // 块级按钮
+        this._renderBlock()
       }
-      .attributeModifier(new ContainerModifier<ScrollAttribute>(true))
+      .width('100%')
     }
-    .title('Button 按钮')
   }
 }

@@ -1,3 +1,5 @@
+import PageContainer from '../../components/PageContainer'
+
 @Builder
 export function renderStepper() {
   StepperDemo()
@@ -6,9 +8,10 @@ export function renderStepper() {
 @Component
 export struct StepperDemo {
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'Stepper 步进器',
+    }) {
 
     }
-    .title('Stepper 步进器')
   }
 }

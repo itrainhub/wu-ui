@@ -1,3 +1,5 @@
+import PageContainer from '../../components/PageContainer'
+
 @Builder
 export function renderCountDown() {
   CountDownDemo()
@@ -6,9 +8,10 @@ export function renderCountDown() {
 @Component
 export struct CountDownDemo {
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'CountDown 倒计时',
+    }) {
 
     }
-    .title('CountDown 倒计时')
   }
 }

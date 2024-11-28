@@ -2,112 +2,112 @@
   "routerMap": [
     {
       "name": "button",
-      "pageSourceFile": "src/main/ets/pages/basic/ButtonDemo.ets",
+      "pageSourceFile": "src/main/ets/views/basic/ButtonDemo.ets",
       "buildFunction": "renderButton"
     },
     {
       "name": "cell",
-      "pageSourceFile": "src/main/ets/pages/basic/CellDemo.ets",
+      "pageSourceFile": "src/main/ets/views/basic/CellDemo.ets",
       "buildFunction": "renderCell"
     },
     {
       "name": "icon",
-      "pageSourceFile": "src/main/ets/pages/basic/IconDemo.ets",
+      "pageSourceFile": "src/main/ets/views/basic/IconDemo.ets",
       "buildFunction": "renderIcon"
     },
     {
       "name": "image",
-      "pageSourceFile": "src/main/ets/pages/basic/ImageDemo.ets",
+      "pageSourceFile": "src/main/ets/views/basic/ImageDemo.ets",
       "buildFunction": "renderImage"
     },
     {
       "name": "popup",
-      "pageSourceFile": "src/main/ets/pages/basic/PopupDemo.ets",
+      "pageSourceFile": "src/main/ets/views/basic/PopupDemo.ets",
       "buildFunction": "renderPopup"
     },
     {
       "name": "toast",
-      "pageSourceFile": "src/main/ets/pages/basic/ToastDemo.ets",
+      "pageSourceFile": "src/main/ets/views/basic/ToastDemo.ets",
       "buildFunction": "renderToast"
     },
     {
       "name": "checkbox",
-      "pageSourceFile": "src/main/ets/pages/form/CheckboxDemo.ets",
+      "pageSourceFile": "src/main/ets/views/form/CheckboxDemo.ets",
       "buildFunction": "renderCheckbox"
     },
     {
       "name": "field",
-      "pageSourceFile": "src/main/ets/pages/form/FieldDemo.ets",
+      "pageSourceFile": "src/main/ets/views/form/FieldDemo.ets",
       "buildFunction": "renderField"
     },
     {
       "name": "search",
-      "pageSourceFile": "src/main/ets/pages/form/SearchDemo.ets",
+      "pageSourceFile": "src/main/ets/views/form/SearchDemo.ets",
       "buildFunction": "renderSearch"
     },
     {
       "name": "stepper",
-      "pageSourceFile": "src/main/ets/pages/form/StepperDemo.ets",
+      "pageSourceFile": "src/main/ets/views/form/StepperDemo.ets",
       "buildFunction": "renderStepper"
     },
     {
       "name": "backtop",
-      "pageSourceFile": "src/main/ets/pages/navigation/BackTopDemo.ets",
+      "pageSourceFile": "src/main/ets/views/navigation/BackTopDemo.ets",
       "buildFunction": "renderBackTop"
     },
     {
       "name": "grid",
-      "pageSourceFile": "src/main/ets/pages/navigation/GridDemo.ets",
+      "pageSourceFile": "src/main/ets/views/navigation/GridDemo.ets",
       "buildFunction": "renderGrid"
     },
     {
       "name": "countdown",
-      "pageSourceFile": "src/main/ets/pages/display/CountDownDemo.ets",
+      "pageSourceFile": "src/main/ets/views/display/CountDownDemo.ets",
       "buildFunction": "renderCountDown"
     },
     {
       "name": "divider",
-      "pageSourceFile": "src/main/ets/pages/display/DividerDemo.ets",
+      "pageSourceFile": "src/main/ets/views/display/DividerDemo.ets",
       "buildFunction": "renderDivider"
     },
     {
       "name": "empty",
-      "pageSourceFile": "src/main/ets/pages/display/EmptyDemo.ets",
+      "pageSourceFile": "src/main/ets/views/display/EmptyDemo.ets",
       "buildFunction": "renderEmpty"
     },
     {
       "name": "splash",
-      "pageSourceFile": "src/main/ets/pages/display/SplashDemo.ets",
+      "pageSourceFile": "src/main/ets/views/display/SplashDemo.ets",
       "buildFunction": "renderSplash"
     },
     {
       "name": "tag",
-      "pageSourceFile": "src/main/ets/pages/display/TagDemo.ets",
+      "pageSourceFile": "src/main/ets/views/display/TagDemo.ets",
       "buildFunction": "renderTag"
     },
     {
       "name": "loading",
-      "pageSourceFile": "src/main/ets/pages/feedback/LoadingDemo.ets",
+      "pageSourceFile": "src/main/ets/views/feedback/LoadingDemo.ets",
       "buildFunction": "renderLoading"
     },
     {
       "name": "swipecell",
-      "pageSourceFile": "src/main/ets/pages/feedback/SwipeCellDemo.ets",
+      "pageSourceFile": "src/main/ets/views/feedback/SwipeCellDemo.ets",
       "buildFunction": "renderSwipeCell"
     },
     {
       "name": "actionbar",
-      "pageSourceFile": "src/main/ets/pages/business/ActionBarDemo.ets",
+      "pageSourceFile": "src/main/ets/views/business/ActionBarDemo.ets",
       "buildFunction": "renderActionBar"
     },
     {
       "name": "card",
-      "pageSourceFile": "src/main/ets/pages/business/CardDemo.ets",
+      "pageSourceFile": "src/main/ets/views/business/CardDemo.ets",
       "buildFunction": "renderCard"
     },
     {
       "name": "submitbar",
-      "pageSourceFile": "src/main/ets/pages/business/SubmitBarDemo.ets",
+      "pageSourceFile": "src/main/ets/views/business/SubmitBarDemo.ets",
       "buildFunction": "renderSubmitBar"
     }
   ]

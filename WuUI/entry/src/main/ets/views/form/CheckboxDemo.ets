@@ -1,4 +1,5 @@
 import { WuButton, WuCheckbox, WuCheckboxGroup, WuCheckboxGroupContext } from '@itrain/wu-ui'
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 export function renderCheckbox() {
@@ -12,7 +13,9 @@ export struct CheckboxDemo {
   ctx?: WuCheckboxGroupContext
 
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'Checkbox 复选框'
+    }) {
       Column() {
         Text('复选框组测试')
 
@@ -91,9 +94,7 @@ export struct CheckboxDemo {
             })
         }
       }
-      .height('100%')
       .width('100%')
     }
-    .title('Checkbox 复选框')
   }
 }

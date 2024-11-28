@@ -1,6 +1,6 @@
-import { WuCell, WuCellGroup, WuTag } from "@itrain/wu-ui"
-import { WuShape, WuThemeType } from "@itrain/wu-ui/src/main/ets/theme-chalk/types"
-import { ContainerModifier } from "../../styles/Page"
+import { WuCell, WuCellGroup, WuTag } from '@itrain/wu-ui'
+import { WuShape, WuThemeType } from '@itrain/wu-ui/src/main/ets/theme-chalk/types'
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 export function renderTag() {
@@ -129,43 +129,41 @@ export struct TagDemo {
   }
 
   build() {
-    NavDestination() {
-      Scroll() {
-        Column() {
-          WuCellGroup({
-            title: '基本用法',
-            inset: true,
-            customContent: () => { this._renderBasic() },
-          })
+    PageContainer({
+      title: 'Tag 标签',
+    }) {
+      Column() {
+        WuCellGroup({
+          title: '基本用法',
+          inset: true,
+          customContent: () => { this._renderBasic() },
+        })
 
-          WuCellGroup({
-            title: '样式风格',
-            inset: true,
-            customContent: () => { this._renderStyle() },
-          })
+        WuCellGroup({
+          title: '样式风格',
+          inset: true,
+          customContent: () => { this._renderStyle() },
+        })
 
-          WuCellGroup({
-            title: '标签大小',
-            inset: true,
-            customContent: () => { this._renderSize() },
-          })
+        WuCellGroup({
+          title: '标签大小',
+          inset: true,
+          customContent: () => { this._renderSize() },
+        })
 
-          WuCellGroup({
-            title: '自定义颜色',
-            inset: true,
-            customContent: () => { this._renderColor() },
-          })
+        WuCellGroup({
+          title: '自定义颜色',
+          inset: true,
+          customContent: () => { this._renderColor() },
+        })
 
-          WuCellGroup({
-            title: '边框线宽',
-            inset: true,
-            customContent: () => { this._renderBorder() },
-          })
-        }
-        .width('100%')
+        WuCellGroup({
+          title: '边框线宽',
+          inset: true,
+          customContent: () => { this._renderBorder() },
+        })
       }
-      .attributeModifier(new ContainerModifier<ScrollAttribute>())
+      .width('100%')
     }
-    .title('Tag 标签')
   }
 }

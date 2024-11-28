@@ -1,5 +1,5 @@
 import { WuCell, WuCellGroup, WuToast } from '@itrain/wu-ui'
-import { ContainerModifier } from '../../styles/Page'
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 function renderToast() {
@@ -212,48 +212,47 @@ export struct ToastDemo {
   }
 
   build() {
-    NavDestination() {
-      Scroll() {
-        Column() {
-          WuCellGroup({
-            title: '基础用法',
-            customContent: this.renderBasic,
-            inset: true,
-          })
+    PageContainer({
+      title: 'Toast 轻提示',
+    }) {
+      Column() {
+        WuCellGroup({
+          title: '基础用法',
+          customContent: this.renderBasic,
+          inset: true,
+        })
 
-          WuCellGroup({
-            title: '自定义图标',
-            customContent: this.renderIcon,
-            inset: true,
-          })
+        WuCellGroup({
+          title: '自定义图标',
+          customContent: this.renderIcon,
+          inset: true,
+        })
 
-          WuCellGroup({
-            title: '自定义位置',
-            customContent: this.renderPosition,
-            inset: true,
-          })
+        WuCellGroup({
+          title: '自定义位置',
+          customContent: this.renderPosition,
+          inset: true,
+        })
 
-          WuCellGroup({
-            title: '文字换行方式',
-            customContent: this.renderWordBreak,
-            inset: true,
-          })
+        WuCellGroup({
+          title: '文字换行方式',
+          customContent: this.renderWordBreak,
+          inset: true,
+        })
 
-          WuCellGroup({
-            title: '遮罩',
-            customContent: this.renderOverlay,
-            inset: true,
-          })
+        WuCellGroup({
+          title: '遮罩',
+          customContent: this.renderOverlay,
+          inset: true,
+        })
 
-          WuCellGroup({
-            title: '展示时长',
-            customContent: this.renderDuration,
-            inset: true,
-          })
-        }
+        WuCellGroup({
+          title: '展示时长',
+          customContent: this.renderDuration,
+          inset: true,
+        })
       }
-      .attributeModifier(new ContainerModifier<ScrollAttribute>())
+      .width('100%')
     }
-    .title('Toast 轻提示')
   }
 }

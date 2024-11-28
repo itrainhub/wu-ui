@@ -1,4 +1,5 @@
 import { WuButton, WuCard, WuCheckbox, WuStepper } from '@itrain/wu-ui'
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 export function renderCard() {
@@ -66,9 +67,10 @@ export struct CardDemo {
   }
 
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'Card 商品卡片',
+    }) {
       Column() {
-
         ForEach(this.goods, (goods: ICardGoods) => {
           WuCard({
             // title: 'abcdefg',
@@ -94,9 +96,7 @@ export struct CardDemo {
           })
         })
       }
-      .height('100%')
       .width('100%')
     }
-    .title('Card 商品卡片')
   }
 }

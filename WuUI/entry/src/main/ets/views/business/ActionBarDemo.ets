@@ -1,4 +1,5 @@
-import { WuActionBar } from '@itrain/wu-ui';
+import { WuActionBar } from '@itrain/wu-ui'
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 export function renderActionBar() {
@@ -8,15 +9,15 @@ export function renderActionBar() {
 @Component
 export struct ActionBarDemo {
   build() {
-    NavDestination() {
+    PageContainer( {
+      title: 'ActionBar 商品动作栏',
+    }) {
       Column() {
         WuActionBar({
           cartBadge: 922
         })
       }
-      .height('100%')
       .width('100%')
     }
-    .title('ActionBar 商品动作栏')
   }
 }

@@ -1,13 +1,5 @@
 import { WuCell, WuCellGroup, WuIcon } from '@itrain/wu-ui'
-import { ContainerModifier } from '../../styles/Page'
-
-@Extend(Text)
-function title() {
-  .fontSize('14fp')
-  .fontWeight(FontWeight.Bold)
-  .fontColor(Color.Gray)
-  .width('100%')
-}
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 export function renderCell() {
@@ -90,52 +82,51 @@ export struct CellDemo {
   }
 
   build() {
-    NavDestination() {
-      Scroll() {
-        Column() {
-          WuCellGroup({
-            title: '基本用法',
-            customContent: this._renderBasic,
-          })
+    PageContainer({
+      title: 'Cell 单元格',
+      defaultPadding: 0,
+    }) {
+      Column() {
+        WuCellGroup({
+          title: '基本用法',
+          customContent: this._renderBasic,
+        })
 
-          WuCellGroup({
-            title: '卡片风格',
-            inset: true,
-            customContent: this._renderBasic,
-          })
+        WuCellGroup({
+          title: '卡片风格',
+          inset: true,
+          customContent: this._renderBasic,
+        })
 
-          WuCellGroup({
-            title: '展示图标',
-            customContent: this._renderIcon,
-          })
+        WuCellGroup({
+          title: '展示图标',
+          customContent: this._renderIcon,
+        })
 
-          WuCellGroup({
-            title: '展示箭头',
-            customContent: this._renderLink,
-          })
+        WuCellGroup({
+          title: '展示箭头',
+          customContent: this._renderLink,
+        })
 
-          WuCellGroup({
-            title: '分组标题',
-            bordered: false,
-            customContent: () => { this._renderGroup() },
-          })
+        WuCellGroup({
+          title: '分组标题',
+          bordered: false,
+          customContent: () => { this._renderGroup() },
+        })
 
-          WuCellGroup({
-            title: '自定义布局',
-            customContent: () => {
-              this._renderCustom()
-            },
-          })
+        WuCellGroup({
+          title: '自定义布局',
+          customContent: () => {
+            this._renderCustom()
+          },
+        })
 
-          WuCellGroup({
-            title: '垂直居中',
-            customContent: this._renderCenter,
-          })
-        }
-        .width('100%')
+        WuCellGroup({
+          title: '垂直居中',
+          customContent: this._renderCenter,
+        })
       }
-      .attributeModifier(new ContainerModifier<ScrollAttribute>())
+      .width('100%')
     }
-    .title('Cell 单元格')
   }
 }

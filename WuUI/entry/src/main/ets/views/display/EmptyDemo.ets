@@ -1,4 +1,5 @@
-import { WuEmpty } from '@itrain/wu-ui';
+import { WuEmpty } from '@itrain/wu-ui'
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 export function renderEmpty() {
@@ -9,15 +10,15 @@ export function renderEmpty() {
 export struct EmptyDemo {
 
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'Empty 空状态',
+    }) {
       Column() {
         WuEmpty({
           description: '购物车是空的哟'
         })
       }
-      .height('100%')
       .width('100%')
     }
-    .title('Empty 空状态')
   }
 }

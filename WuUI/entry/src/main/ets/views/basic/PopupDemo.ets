@@ -1,4 +1,5 @@
 import { WuPopup } from '@itrain/wu-ui'
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 export function renderPopup() {
@@ -29,7 +30,9 @@ export struct PopupDemo {
   }
 
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'Popup 弹出层',
+    }) {
       Column() {
         Button('显隐' + this.visible).onClick((event: ClickEvent) => {
           this.visible = !this.visible
@@ -42,7 +45,7 @@ export struct PopupDemo {
           closeable: false,
           // round: true,
           // maskClosable: false,
-          safeAreaInsetTop: true,
+          // safeAreaInsetTop: true,
           // safeAreaInsetBottom: true,
           popupWidth: 300,
           // popupHeight: 200,
@@ -60,6 +63,5 @@ export struct PopupDemo {
       .height('100%')
       .width('100%')
     }
-    .title('Popup 弹出层')
   }
 }

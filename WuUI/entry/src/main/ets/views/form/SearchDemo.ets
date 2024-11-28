@@ -1,3 +1,5 @@
+import PageContainer from '../../components/PageContainer'
+
 @Builder
 export function renderSearch() {
   SearchDemo()
@@ -6,9 +8,10 @@ export function renderSearch() {
 @Component
 export struct SearchDemo {
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'Search 搜索',
+    }) {
 
     }
-    .title('Search 搜索')
   }
 }

@@ -1,4 +1,5 @@
 import { WuLoading } from '@itrain/wu-ui'
+import PageContainer from '../../components/PageContainer'
 
 @Builder
 export function renderLoading() {
@@ -18,7 +19,9 @@ export struct LoadingDemo {
   }
 
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'Loading 加载',
+    }) {
       Column() {
         WuLoading({
           // iconSize: 64,
@@ -29,9 +32,7 @@ export struct LoadingDemo {
           // customText: this._renderText,
         })
       }
-      .height('100%')
       .width('100%')
     }
-    .title('Loading 加载')
   }
 }

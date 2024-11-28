@@ -1,3 +1,5 @@
+import PageContainer from '../../components/PageContainer'
+
 @Builder
 export function renderDivider() {
   DividerDemo()
@@ -6,9 +8,10 @@ export function renderDivider() {
 @Component
 export struct DividerDemo {
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'Divider 分割线',
+    }) {
 
     }
-    .title('Divider 分割线')
   }
 }

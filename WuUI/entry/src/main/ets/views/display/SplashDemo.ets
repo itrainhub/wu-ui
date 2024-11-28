@@ -1,3 +1,5 @@
+import PageContainer from '../../components/PageContainer'
+
 @Builder
 export function renderSplash() {
   SplashDemo()
@@ -6,9 +8,10 @@ export function renderSplash() {
 @Component
 export struct SplashDemo {
   build() {
-    NavDestination() {
+    PageContainer({
+      title: 'Splash 过渡页'
+    }) {
 
     }
-    .title('Splash 过渡页')
   }
 }
