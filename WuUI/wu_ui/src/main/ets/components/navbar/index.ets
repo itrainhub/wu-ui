@@ -63,8 +63,8 @@ export struct WuNavBar {
       Text(this.leftText)
         .fontSize(this.theme.fontSizeXl)
         .fontColor(this.theme.primary)
-        .onClick(this.onLeftClick)
     }
+    .onClick(this.onLeftClick)
   }
 
   /**
@@ -81,6 +81,14 @@ export struct WuNavBar {
   build() {
     Column() {
       Stack() {
+        // 中间标题
+        Column() {
+          this.customTitle()
+        }
+        .width('100%')
+        .alignItems(HorizontalAlign.Start)
+        .padding({left: '108lpx', right: '108lpx'})
+
         Row() {
           // 左侧按钮
           if (this.back) {
@@ -91,14 +99,6 @@ export struct WuNavBar {
           this.customRight()
         }
         .width('100%')
-
-        // 中间标题
-        Column() {
-          this.customTitle()
-        }
-        .width('100%')
-        .alignItems(HorizontalAlign.Start)
-        .padding({left: '108lpx', right: '108lpx'})
       }
       .width('100%')
       .alignContent(Alignment.TopStart)

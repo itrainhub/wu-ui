@@ -1,5 +1,6 @@
-import { WuCellGroup, WuIcon, WuNavBar } from '@itrain/wu-ui'
+import { WuIcon, WuNavBar } from '@itrain/wu-ui'
 import PageContainer from '../../components/PageContainer'
+import { promptAction } from '@kit.ArkUI'
 
 @Builder
 export function renderNavBar() {
@@ -14,6 +15,8 @@ interface NavBarOptions {
   leftArrow: boolean
   customRight: () => void
   customLeft: () => void
+  onLeftClick: () => void
+  onRightClick: () => void
 }
 
 @Component
@@ -48,7 +51,14 @@ export struct NavBarDemo {
    */
   @Builder
   _renderBack() {
-    this._renderCommon('返回上级', { title: '标题', leftText: '返回', leftArrow: true })
+    this._renderCommon('返回上级', {
+      title: '标题',
+      leftText: '返回',
+      leftArrow: true,
+      onLeftClick: () => {
+        promptAction.showToast({ message: '后退', })
+      },
+    })
   }
 
   /**
@@ -56,7 +66,15 @@ export struct NavBarDemo {
    */
   @Builder
   _renderRight() {
-    this._renderCommon('右侧按钮', { title: '标题', leftText: '返回', leftArrow: true, rightText: '按钮' })
+    this._renderCommon('右侧按钮', {
+      title: '标题',
+      leftText: '返回',
+      leftArrow: true,
+      rightText: '按钮',
+      onRightClick: () => {
+        promptAction.showToast({ message: '点击了右侧按钮', })
+      },
+    })
   }
 
   /**

@@ -1,7 +1,7 @@
 {
   "app": {
     "bundleName": "com.example.wuui",
-    "patchVersionCode": 2001341,
+    "patchVersionCode": 2001345,
     "versionCode": 1000000
   },
   "module": {
