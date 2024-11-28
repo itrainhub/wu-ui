@@ -74,6 +74,11 @@ struct Main {
           label: '搜索',
         },
         {
+          path: 'signature',
+          name: 'Signature',
+          label: '签名',
+        },
+        {
           path: 'stepper',
           name: 'Stepper',
           label: '步进器',

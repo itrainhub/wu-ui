@@ -29,6 +29,7 @@ export { WuToast } from './src/main/ets/components/toast'
 export { WuSwipeCell } from './src/main/ets/components/swipecell'
 export { WuTag } from './src/main/ets/components/tag'
 export { WuNavBar } from './src/main/ets/components/navbar'
+export { WuSignature } from './src/main/ets/components/signature'
 
 export default class WuUI {
   static init = WuGlobalData.init

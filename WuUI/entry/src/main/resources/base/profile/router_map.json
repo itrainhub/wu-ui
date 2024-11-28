@@ -46,6 +46,11 @@
       "buildFunction": "renderSearch"
     },
     {
+      "name": "signature",
+      "pageSourceFile": "src/main/ets/views/form/SignatureDemo.ets",
+      "buildFunction": "renderSignature"
+    },
+    {
       "name": "stepper",
       "pageSourceFile": "src/main/ets/views/form/StepperDemo.ets",
       "buildFunction": "renderStepper"
