@@ -118,6 +118,7 @@ struct Splash {
 - [x] ActionBar 商品动作栏
 - [x] BackTop 回到顶部
 - [x] Grid 宫格
+- [x] NavBar 导航栏
 - [ ] Sidebar 侧边栏
 - [ ] AddressEdit 地址编辑
 - [ ] AddressList 地址列表
